@@ -1,5 +1,5 @@
 # elecciones18
-Elecciones federales en México 2018
+### Elecciones federales en México 2018
 
 MISION:
 
@@ -17,6 +17,8 @@ Atte.
 Equipo elecciones18.mx
 
 (English)
+
+MISION:
 
 The elecciones18 project represents a new statistics open source option for Mexican citizens and the international community,
 who wish to consult data and statistics on presidential candidates in Mexico 2018. The project and information presented is not influenced
