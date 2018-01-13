@@ -18,7 +18,7 @@ Equipo elecciones18.mx
 
 (English)
 
-The Elections18 project represents a new statistics open source option for Mexican citizens and the international community,
+The elecciones18 project represents a new statistics open source option for Mexican citizens and the international community,
 who wish to consult data and statistics on presidential candidates in Mexico 2018. The project and information presented is not influenced
 or bought by any political party or organization.
 
