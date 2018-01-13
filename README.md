@@ -5,7 +5,7 @@ MISION:
 
 El proyecto elecciones18 representa una nueva opción para los ciudadanos mexicanos y la comunidad internacional que desee consultar datos 
 y estadísticas sobre los candidatos presidenciales en México 2018. Las cuales no están influenciadas ni compradas por ningun partido político
-u organizacion.
+u organización.
 
 La neutralidad y apertura de la información, permite que la democracia triunfe y que el derecho de votar no sea comprado o malamente informado
 durante el ejercicio de una elección presidencial. 
