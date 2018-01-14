@@ -1,0 +1,38 @@
+language: node_js
+node_js:
+  - "6"
+
+cache:
+  directories:
+    - sysconfcpus
+    - $(npm config get prefix)/lib/node_modules
+    - elm-stuff/build-artifacts
+    - tests/elm-stuff/build-artifacts
+
+env:
+  - ELM_VERSION=0.18.0
+
+install:
+  - node --version
+  - npm --version
+  - npm install -g elm elm-test npx uglify-js
+
+script:
+  - |
+    if [ ! -d sysconfcpus/bin ];
+    then
+      git clone https://github.com/obmarg/libsysconfcpus.git; 
+      cd libsysconfcpus;
+      ./configure --prefix=$TRAVIS_BUILD_DIR/sysconfcpus;
+      make && make install;
+      cd ..;
+    fi
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: static 
+  fqdn: elecciones18.mx
+  on:
+    branch: master 
