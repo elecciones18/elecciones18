@@ -2,9 +2,9 @@
   <head>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="../../Desktop/Pycharm_Projects/UNIFR_Work/Web_Plots/TEST_1ST_ROUND/calcs.min.js"></script>
+    <script src="calcs.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../Desktop/Pycharm_Projects/UNIFR_Work/Web_Plots/TEST_1ST_ROUND/results.css">
+    <link rel="stylesheet" type="text/css" href="results.css">
 
     <script>
 
@@ -15,7 +15,7 @@
           var voter_answer = JSON.voter;
           console.log(voter_answer);
 
-      d3.json("data/presidentes.json",  function (JSON){
+      d3.json("data/presidentCandidateProfiles.json",  function (JSON){
           var party_answer = JSON.candidates;
           console.log(party_answer);
 
