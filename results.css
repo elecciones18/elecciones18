@@ -11,43 +11,13 @@
   color: #fff;
   background-color: #003399;
 }
-/*
-.results .nav-pills li{
-/*border-bottom: #121213 solid 1px;
-}
-*/
+
 .results .nav-pills li.active{
   /*border-bottom: #FBFBFB solid 1px;
   border-left: #121213 solid 1px;
   border-right: #121213 solid 1px;*/
   border-top: #039 solid 5px;
 }
-/*
-.results .nav-pills li.active{
-
--webkit-box-shadow: 0px -5px 13px 6px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -5px 13px 6px rgba(0,0,0,0.75);
-box-shadow: 0px -5px 13px 6px rgba(0,0,0,0.75);
-z-index: 1;
-
-}
-.results .nav-pills li.active:first-child{
-/* Right Top Shadow
-
--webkit-box-shadow: 10px -5px 13px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px -5px 13px 0px rgba(0,0,0,0.75);
-box-shadow: 10px -5px 13px 0px rgba(0,0,0,0.75);
-
-}
-.results .nav-pills li.active:last-child{
-/* Left Top Shadow
-
--webkit-box-shadow: -10px -5px 13px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -10px -5px 13px 0px rgba(0,0,0,0.75);
-box-shadow: -10px -5px 13px 0px rgba(0,0,0,0.75);
-
-}
-*/
 
 .results .nav-pills, .results .nav-pills>li, .results .nav-pills>li.active{
   background-color: #E8E8E8;
@@ -145,11 +115,11 @@ box-shadow: -10px -5px 13px 0px rgba(0,0,0,0.75);
 
 .vertBarChartArea .row.positive,
 .vertBarChartArea .row.negative{
-  height: 150px;
+  height: 200px;
 }
 
 .vertBarChartArea .row.logo{
-  height: 40px;
+  height: 200px;
 }
 
 .vertBarChartArea .row > div{
@@ -195,17 +165,18 @@ box-shadow: -10px -5px 13px 0px rgba(0,0,0,0.75);
 
 /*Bar Chart*/
 .barChartArea,
-.barChartArea .bar>h4{
+.barChartArea .bar>h2{
   color: white;
 }
 .barChartArea .row{
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .barChartArea .midlle-area{
   background-color: rgb(232, 232, 232);
 }
-@media (max-width: 499px) {
+
+@media (max-width: 50px) {
   .barChartArea .left-area .bar, .barChartArea .right-area .bar{
     min-width: 35%;
   }
