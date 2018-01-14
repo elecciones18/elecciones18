@@ -59,6 +59,7 @@ function getStmtFormFields() {
 }
 
 function showProfileResult(userAnswers, partyAnswer) {
+	document.getElementById("statementsForm").innerHTML = "";
 	var parties=[
 		{
 			answers:partyAnswer[partyAnswer.length-1]["candidate_1"],
