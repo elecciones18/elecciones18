@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="calcs.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="results.css">
+
+    <script>
+
+      var directory = location.search.split('uid=')[1];
+
+      d3.json(directory,  function (JSON){
+          var voter_answer = JSON.voter;
+          console.log(voter_answer);
+
+      d3.json("data/presidentCandidateProfiles.json",  function (JSON){
+          var party_answer = JSON.candidates;
+          console.log(party_answer);
+
+      var userAnswers = voter_answer[voter_answer.length-1]["answers"];
+      var parties=[
+        {
+          answers:party_answer[party_answer.length-1]["candidate_1"],
+          logo:'logos_presidencia/1.jpg',
+          name:'Andr\u00e9s Manuel L\u00f3pez Obrador'
+        },
+        {
+          answers:party_answer[party_answer.length-1]["candidate_2"],
+          logo:'logos_presidencia/2.jpg',
+          name:'Jos\u00e9 Antonio Meade Kuribre\u00f1a'
+        },
+        {
+          answers:party_answer[party_answer.length-1]["candidate_3"],
+          logo:'logos_presidencia/3.jpg',
+          name:'Margarita Zavala'
+        },
+        {
+          answers:party_answer[party_answer.length-1]["candidate_4"],
+          logo:'logos_presidencia/4.jpg',
+          name:'Miguel \u00c1ngel Mancera'
+        },
+        {
+          answers:party_answer[party_answer.length-1]["candidate_5"],
+          logo:'logos_presidencia/5.jpg',
+          name:'Ricardo Anaya'
+        },
+        {
+          answers:party_answer[party_answer.length-1]["candidate_6"],
+          logo:'logos_presidencia/6.jpg',
+          name:'Jaime Rodr\u00edguez'
+        }
+      ];
+
+      var weightageArray=[];
+			for(i=0; i<userAnswers.length; i++){
+				weightageArray[i]=1;
+			}
+      var hybrid=[];
+      for(i=0; i<parties.length; i++){
+    		parties[i].hybrid = vaaCalcs.hybrid(parties[i].answers, userAnswers, weightageArray, 99);
+      }
+
+      parties.sort(function(a,b) {
+        return b.hybrid-a.hybrid;
+      });
+
+      $( document ).ready(function() {
+        chart('#barChart', parties);
+      });
+
+});
+});
+    </script>
+
+    <style>
+.button {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+</style>
+
+  </head>
+  <body style="background-color:#FFFFFF;">
+    <div class="barChartArea" id="barChart"></div>
+    <p align="center">
+    <button class="button button" onClick="window.top.location.reload();">Actualizar</button>
+    </p>
+  </body>
+</html>
