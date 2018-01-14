@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Econom\u00eda",
+    "statements": [
+      "Los impuestos deben disminuirse para incentivar el crecimiento econ\u00f3mico del pa\u00eds.",
+      "Los subsidios a la gasolina deben eliminarse y en su lugar subsidiar un sistema de transporte p\u00fablico o mejor educaci\u00f3n.",
+      "El salario m\u00ednimo debe ser ajustado al nivel de inflaci\u00f3n en nuestro pa\u00eds.",
+      "M\u00e9xico debe seguir dependiendo de sus exportaciones a los Estados Unidos y de su producci\u00f3n de petr\u00f3leo.",
+      "Tener capitales en para\u00edsos fiscales debe ser penado por la ley"
+    ]
+  },
+  {
+    "title": "Pol\u00edtica",
+    "statements": [
+      "El estado debe controlar lo que publican o difunden los medios de comunicaci\u00f3n.",
+      "Es necesario un gobierno austero con menos ministerios y funcionarios p\u00fablicos.",
+      "No se deben establecer sanciones por opiniones pol\u00edticas expresadas en la web. (ej: Youtubers)",
+      "Disfruta la guerra de acusaciones entre partidos y destapes de corrupci\u00f3n.",
+      "Se siente m\u00e1s c\u00f3modo votando por un candidato famoso o con copete.",
+      "Deber\u00eda aumentarse el nivel de escolaridad a Universidad para funcionarios p\u00fablicos."
+    ]
+  },
+  {
+    "title": "Sociedad",
+    "statements": [
+      "Debe legalizarse el matrimonio entre parejas del mismo sexo.",
+      "Consumo de drogas debe ser penalizado.",
+      "Deben establecerse penas m\u00e1s severas para castigar el maltrato dom\u00e9stico a mujeres y ni\u00f1os.",
+      "Considera necesario un seguro de desempleo que pague una porci\u00f3n de su salario inmediato anterior, mientras recibe asesor\u00eda para encontrar un nuevo trabajo hasta por 3 meses.",
+      "Deben de continuar programas que subsidian el seguro m\u00e9dico y el acceso a servicios de salud.",
+      "La igualdad de salarios entre hombres y mujeres debe ser reportada por las empresas por ley."
+    ]
+  },
+  {
+    "title": "Internacional",
+    "statements": [
+      "Debe M\u00e9xico mirar hacia otros mercados internacionales para mejorar su comercio. Por ejemplo, la Uni\u00f3n Europea y Asia.",
+      "Considera que un candidato que es fluente en varios idiomas puede generar m\u00e1s simpat\u00eda e acuerdos ante otras naciones.",
+      "Debe M\u00e9xico siempre seguir las recomendaciones de organismos internacionales como la ONU, UNICEF, Banco Mundial, etc."
+    ]
+  },
+  {
+    "title": "Seguridad",
+    "statements": [
+      "Debe existir un acuerdo de paz entre los carteles de la droga y el gobierno.",
+      "Es necesaria la extinci\u00f3n de los carteles de la droga, aunque genere una guerra durante el nuevo sexenio.",
+      "Se necesita crear una polic\u00eda \u00fanica en todo el territorio nacional.",
+      "El ej\u00e9rcito y la marina deben siempre estar disponibles para enfrentar a los carteles o grupos armados en nuestro pa\u00eds."
+    ]
+  },
+  {
+    "title": "Educaci\u00f3n",
+    "statements": [
+      "La educaci\u00f3n debe ser laica y gratuita hasta tener una carrera t\u00e9cnica,  universitaria o aprendizaje que garantice los conocimientos necesarios para ejercer un oficio.",
+      "Se debe invertir m\u00e1s recursos en investigaci\u00f3n y desarrollo.",
+      "El gobierno debe mejorar la educaci\u00f3n, aunque tenga que aumentar los impuestos.",
+      "Se deben ofrecer becas y apoyos econ\u00f3micos cuando los estudiantes de bajos recursos tienen en promedio 8"
+    ]
+  }
+]
