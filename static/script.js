@@ -79,17 +79,12 @@ function showProfileResult(userAnswers, partyAnswer) {
 		{
 			answers:partyAnswer[partyAnswer.length-1]["candidate_4"],
 			logo:'logos_presidencia/4.jpg',
-			name:'Miguel \u00c1ngel Mancera'
+            name:'Jaime Rodr\u00edguez'
 		},
 		{
 			answers:partyAnswer[partyAnswer.length-1]["candidate_5"],
 			logo:'logos_presidencia/5.jpg',
 			name:'Ricardo Anaya'
-		},
-		{
-			answers:partyAnswer[partyAnswer.length-1]["candidate_6"],
-			logo:'logos_presidencia/6.jpg',
-			name:'Jaime Rodr\u00edguez'
 		}
 	];
 
